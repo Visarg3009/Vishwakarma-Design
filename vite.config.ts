@@ -28,7 +28,7 @@
         'figma:asset/exterior/bunglow-1-actual.png': path.resolve(__dirname, './src/assets/exterior/bunglow-1-actual.png'),
         'figma:asset/exterior/bunglow-2-2d.png': path.resolve(__dirname, './src/assets/exterior/bunglow-2-2d.png'),
         'figma:asset/exterior/bunglow-2-actual.png': path.resolve(__dirname, './src/assets/exterior/bunglow-2-actual.png'),
-        'figma:asset/heroBanner.png': path.resolve(__dirname, './src/assets/heroBanner.png'),
+        'figma:asset/heroBanner.jpg': path.resolve(__dirname, './src/assets/heroBanner.jpg'),
         'embla-carousel-react@8.6.0': 'embla-carousel-react',
         'cmdk@1.1.1': 'cmdk',
         'class-variance-authority@0.7.1': 'class-variance-authority',

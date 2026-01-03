@@ -3,9 +3,9 @@ import { Award, Users, Lightbulb, CheckCircle } from 'lucide-react';
 
 export function About() {
   const stats = [
-    { icon: Award, value: '10+', label: 'Years Experience' },
-    { icon: Users, value: '500+', label: 'Happy Clients' },
-    { icon: Lightbulb, value: '1000+', label: 'Projects Completed' },
+    { icon: Award, value: '8+', label: 'Years Experience' },
+    { icon: Users, value: '350+', label: 'Happy Clients' },
+    { icon: Lightbulb, value: '420+', label: 'Projects Completed' },
   ];
 
   const features = [

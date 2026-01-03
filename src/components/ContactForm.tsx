@@ -6,7 +6,6 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { toast } from 'sonner@2.0.3';
-import emailjs from "@emailjs/browser";
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -31,34 +30,30 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      const result = await emailjs.send(
-        "service_03w063q",
-        "template_i4ld90q",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone: formData.phone,
-          subject: formData.subject,
-          message: formData.message,
-          to_email: "visarg3009@gmail.com",
+      const res = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        "OUdZX-YcnT2zDrz38"
-      );
+        body: JSON.stringify(formData),
+      });
 
-      if (result.status !== 200) {
-        throw new Error("Failed to send");
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to send message');
       }
 
-      toast.success("Thank you for your inquiry! We will get back to you soon.");
+      toast.success('Thank you for your inquiry! We will get back to you soon.');
       setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
       });
     } catch (error) {
-      toast.error("Something went wrong. Please try again.");
+      toast.error('Something went wrong. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
@@ -131,14 +126,14 @@ export function ContactForm() {
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-[#E8E3DE] rounded-lg border border-[#D4C9C0]">
+            {/* <div className="mt-8 p-6 bg-[#E8E3DE] rounded-lg border border-[#D4C9C0]">
               <h4 className="text-gray-900 mb-2">Business Hours</h4>
               <p className="text-gray-600 text-sm">
                 Monday - Friday: 9:00 AM - 6:00 PM<br />
                 Saturday: 10:00 AM - 4:00 PM<br />
                 Sunday: Closed
               </p>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Contact Form */}

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import heroBanner from 'figma:asset/heroBanner.png';
+import heroBanner from 'figma:asset/heroBanner.jpg';
 
 export function Hero() {
   const scrollToContact = () => {

@@ -39,7 +39,7 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'About', 'Services', 'Interior', 'Exterior', 'Panoramic', 'Contact'].map((item) => (
+            {['Home', 'About', 'Services', 'Interior', 'Exterior', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}

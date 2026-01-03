@@ -38,7 +38,7 @@ export function Footer() {
               <li><a href="#services" className="hover:text-[#C9B8A8] transition-colors">Services</a></li>
               <li><a href="#interior" className="hover:text-[#C9B8A8] transition-colors">Interior Design</a></li>
               <li><a href="#exterior" className="hover:text-[#C9B8A8] transition-colors">Exterior Design</a></li>
-              <li><a href="#panoramic" className="hover:text-[#C9B8A8] transition-colors">Panoramic Views</a></li>
+              {/* <li><a href="#panoramic" className="hover:text-[#C9B8A8] transition-colors">Panoramic Views</a></li> */}
             </ul>
           </div>
 

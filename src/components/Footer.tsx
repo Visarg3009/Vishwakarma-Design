@@ -21,9 +21,9 @@ export function Footer() {
               <a href="#" className="bg-white/10 hover:bg-[#C9B8A8] p-2 rounded-full transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="bg-white/10 hover:bg-[#C9B8A8] p-2 rounded-full transition-colors">
+              {/* <a href="#" className="bg-white/10 hover:bg-[#C9B8A8] p-2 rounded-full transition-colors">
                 <Twitter size={20} />
-              </a>
+              </a> */}
               <a href="#" className="bg-white/10 hover:bg-[#C9B8A8] p-2 rounded-full transition-colors">
                 <Linkedin size={20} />
               </a>
@@ -48,14 +48,14 @@ export function Footer() {
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-[#C9B8A8]" />
-                <a href="mailto:info@vishwakarmadesign.in" className="hover:text-[#C9B8A8] transition-colors">
-                  info@vishwakarmadesign.in
+                <a href="mailto:vishwakarmadesigningsolutions@gmail.com" className="hover:text-[#C9B8A8] transition-colors">
+                  vishwakarmadesigningsolutions@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-[#C9B8A8]" />
-                <a href="tel:+911234567890" className="hover:text-[#C9B8A8] transition-colors">
-                  +91 123 456 7890
+                <a href="tel:+91798426907" className="hover:text-[#C9B8A8] transition-colors">
+                  +91 798-426-9071
                 </a>
               </li>
             </ul>

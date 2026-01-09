@@ -30,7 +30,7 @@ export function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -93,8 +93,8 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="text-gray-900 mb-1">Email</h4>
-                  <a href="mailto:info@vishwakarmadesign.in" className="text-gray-600 hover:text-[#C9B8A8]">
-                    info@vishwakarmadesign.in
+                  <a href="mailto:vishwakarmadesigningsolutions@gmail.com" className="text-gray-600 hover:text-[#C9B8A8]">
+                    vishwakarmadesigningsolutions@gmail.com
                   </a>
                 </div>
               </div>
@@ -105,8 +105,8 @@ export function ContactForm() {
                 </div>
                 <div>
                   <h4 className="text-gray-900 mb-1">Phone</h4>
-                  <a href="tel:+911234567890" className="text-gray-600 hover:text-[#C9B8A8]">
-                    +91 123 456 7890
+                  <a href="tel:+917984269071" className="text-gray-600 hover:text-[#C9B8A8]">
+                    +91 798-426-9071
                   </a>
                 </div>
               </div>
@@ -118,9 +118,7 @@ export function ContactForm() {
                 <div>
                   <h4 className="text-gray-900 mb-1">Address</h4>
                   <p className="text-gray-600">
-                    123 Design Street<br />
-                    Your City, State 123456<br />
-                    India
+                    Ahmedabad, India
                   </p>
                 </div>
               </div>

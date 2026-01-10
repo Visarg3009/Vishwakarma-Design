@@ -1,218 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>New Inquiry - Vishwakarma Design</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #f5f5f5;
-        font-family: Arial, Helvetica, sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
 
-      .wrapper {
-        width: 100%;
-        background-color: #f5f5f5;
-        padding: 24px 0;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>New Inquiry - Vishwakarma Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
 
+    .wrapper {
+      width: 100%;
+      background-color: #f5f5f5;
+      padding: 24px 0;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .header {
+      background-color: #2A2420;
+      color: #ffffff;
+      padding: 20px 28px;
+      border-bottom: 3px solid #C9B8A8;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #C9B8A8;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      opacity: 0.9;
+      margin-top: 4px;
+      color: #d1d5db;
+    }
+
+    .badge {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background-color: #C9B8A8;
+      color: #2A2420;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding: 24px 28px 8px;
+      color: #111827;
+    }
+
+    .section-title {
+      font-size: 18px;
+      margin: 0 0 12px;
+      font-weight: 600;
+    }
+
+    .meta {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .meta-item {
+      margin-bottom: 6px;
+    }
+
+    .meta-label {
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .meta-value a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .meta-value a:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 16px 0 18px;
+    }
+
+    .message-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .message-body {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #374151;
+      white-space: pre-wrap;
+    }
+
+    .footer {
+      padding: 16px 28px 20px;
+      font-size: 11px;
+      color: #6b7280;
+      background-color: #f9fafb;
+    }
+
+    .footer a {
+      color: #111827;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .site-link {
+      margin-top: 4px;
+      font-size: 11px;
+    }
+
+    @media (max-width: 640px) {
       .container {
-        max-width: 640px;
-        margin: 0 auto;
-        background-color: #ffffff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        border-radius: 0;
       }
 
-      .header {
-        background-color: #111827;
-        color: #ffffff;
-        padding: 20px 28px;
-      }
-
-      .brand {
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-      }
-
-      .subtitle {
-        font-size: 13px;
-        opacity: 0.7;
-        margin-top: 4px;
-      }
-
-      .badge {
-        margin-top: 12px;
-        display: inline-block;
-        padding: 4px 10px;
-        border-radius: 999px;
-        background-color: #fbbf24;
-        color: #111827;
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-
-      .content {
-        padding: 24px 28px 8px;
-        color: #111827;
-      }
-
-      .section-title {
-        font-size: 18px;
-        margin: 0 0 12px;
-        font-weight: 600;
-      }
-
-      .meta {
-        margin: 0 0 16px;
-        font-size: 14px;
-        color: #4b5563;
-      }
-
-      .meta-item {
-        margin-bottom: 6px;
-      }
-
-      .meta-label {
-        font-weight: 600;
-        color: #111827;
-      }
-
-      .meta-value a {
-        color: #2563eb;
-        text-decoration: none;
-      }
-
-      .meta-value a:hover {
-        text-decoration: underline;
-      }
-
-      .divider {
-        border: none;
-        border-top: 1px solid #e5e7eb;
-        margin: 16px 0 18px;
-      }
-
-      .message-title {
-        font-size: 15px;
-        font-weight: 600;
-        margin-bottom: 8px;
-      }
-
-      .message-body {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #374151;
-        white-space: pre-wrap;
-      }
-
+      .header,
+      .content,
       .footer {
-        padding: 16px 28px 20px;
-        font-size: 11px;
-        color: #6b7280;
-        background-color: #f9fafb;
+        padding-left: 18px;
+        padding-right: 18px;
       }
+    }
+  </style>
+</head>
 
-      .footer a {
-        color: #111827;
-        text-decoration: none;
-        font-weight: 500;
-      }
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <div class="brand">Vishwakarma Design</div>
+        <div class="subtitle">New enquiry from your website</div>
+        <div class="badge">Contact form</div>
+      </div>
 
-      .footer a:hover {
-        text-decoration: underline;
-      }
+      <!-- Content -->
+      <div class="content">
+        <h2 class="section-title">New Inquiry Received</h2>
 
-      .site-link {
-        margin-top: 4px;
-        font-size: 11px;
-      }
+        <p class="meta">
+          You have received a new message from the contact form on your
+          website.
+        </p>
 
-      @media (max-width: 640px) {
-        .container {
-          border-radius: 0;
-        }
-
-        .header,
-        .content,
-        .footer {
-          padding-left: 18px;
-          padding-right: 18px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <!-- Header -->
-        <div class="header">
-          <div class="brand">Vishwakarma Design</div>
-          <div class="subtitle">New enquiry from your website</div>
-          <div class="badge">Contact form</div>
-        </div>
-
-        <!-- Content -->
-        <div class="content">
-          <h2 class="section-title">New Inquiry Received</h2>
-
-          <p class="meta">
-            You have received a new message from the contact form on your
-            website.
-          </p>
-
-          <div class="meta">
-            <div class="meta-item">
-              <span class="meta-label">Name:</span>
-              <span class="meta-value"><%= name %></span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Email:</span>
-              <span class="meta-value">
-                <a href="mailto:<%= email %>"><%= email %></a>
-              </span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Phone:</span>
-              <span class="meta-value">
-                <%= phone && phone.trim() !== '' ? phone : 'Not provided' %>
-              </span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-label">Subject:</span>
-              <span class="meta-value"><%= subject %></span>
-            </div>
+        <div class="meta">
+          <div class="meta-item">
+            <span class="meta-label">Name:</span>
+            <span class="meta-value">
+              <%= name %>
+            </span>
           </div>
-
-          <hr class="divider" />
-
-          <div>
-            <div class="message-title">Message</div>
-            <div class="message-body">
-              <%= message %>
-            </div>
+          <div class="meta-item">
+            <span class="meta-label">Email:</span>
+            <span class="meta-value">
+              <a href="mailto:<%= email %>">
+                <%= email %>
+              </a>
+            </span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Phone:</span>
+            <span class="meta-value">
+              <%= phone && phone.trim() !=='' ? phone : 'Not provided' %>
+            </span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Subject:</span>
+            <span class="meta-value">
+              <%= subject %>
+            </span>
           </div>
         </div>
 
-        <!-- Footer -->
-        <div class="footer">
-          <div>Submitted via the Vishwakarma Design website.</div>
-          <div class="site-link">
-            Website:
-            <a href="https://vishwakarma-design.netlify.app" target="_blank"
-              >vishwakarma-design.netlify.app</a
-            >
+        <hr class="divider" />
+
+        <div>
+          <div class="message-title">Message</div>
+          <div class="message-body">
+            <%= message %>
           </div>
         </div>
       </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div>Submitted via the Vishwakarma Design website.</div>
+        <div class="site-link">
+          Website:
+          <a href="https://www.vishwakarmadesign.in" target="_blank">www.vishwakarmadesign.in</a>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

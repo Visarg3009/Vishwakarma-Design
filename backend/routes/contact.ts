@@ -13,8 +13,18 @@ interface ContactForm {
 
 const router = Router();
 
+import fs from 'fs';
+
 const renderEmailHtml = async (data: ContactForm) => {
-  const templatePath = path.join(__dirname, '..', 'views', 'contact-email.ejs');
+  // Check typical locations for the template
+  // 1. Dev/Standard: relative to current file in src usually ../views
+  // 2. Prod (dist): compiled file is in dist/routes, so we need ../../views
+  let templatePath = path.join(__dirname, '..', 'views', 'contact-email.ejs');
+
+  if (!fs.existsSync(templatePath)) {
+    templatePath = path.join(__dirname, '..', '..', 'views', 'contact-email.ejs');
+  }
+
   return ejs.renderFile(templatePath, data);
 };
 
@@ -42,7 +52,7 @@ router.post('/', async (req: Request<{}, {}, ContactForm>, res: Response) => {
       from: `"Vishwakarma Design" <${process.env.SMTP_USER}>`,
       to: 'visarg3009@gmail.com',
       replyTo: email,
-      subject: `New Contact Form: ${subject}`,
+      subject: `New Inquiry from Website: ${subject}`,
       html,
     };
 

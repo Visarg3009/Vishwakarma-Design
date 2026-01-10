@@ -16,10 +16,11 @@ jobs:
       - name: Setup SSH
         shell: bash
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.EC2_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+          echo "HOME is $HOME"
+          mkdir -p "$HOME/.ssh"
+          echo "${{ secrets.EC2_KEY }}" | tr -d '\r' > "$HOME/.ssh/id_rsa"
+          chmod 600 "$HOME/.ssh/id_rsa"
+          ssh-keyscan -H "${{ secrets.EC2_HOST }}" >> "$HOME/.ssh/known_hosts"
 
       - name: Deploy on EC2
         run: |

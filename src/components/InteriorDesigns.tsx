@@ -48,9 +48,9 @@ export function InteriorDesigns() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">Interior Designs</h2>
+          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">Interior Design Portfolio Gallery</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hover over each design to see the transformation from 2D plan to actual photo
+            Explore our residential and commercial interior design portfolio. Hover over each design to see the transformation from 2D plan to actual photo.
           </p>
         </motion.div>
 

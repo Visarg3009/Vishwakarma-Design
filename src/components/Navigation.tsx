@@ -24,9 +24,8 @@ export function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
@@ -43,9 +42,8 @@ export function Navigation() {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`transition-colors hover:text-[#C9B8A8] ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
-                }`}
+                className={`transition-colors hover:text-[#C9B8A8] ${isScrolled ? 'text-gray-700' : 'text-white'
+                  }`}
               >
                 {item}
               </button>

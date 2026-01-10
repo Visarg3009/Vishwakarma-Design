@@ -41,9 +41,9 @@ export function ExteriorDesigns() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">Exterior Designs</h2>
+          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">Exterior Design Portfolio Gallery</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our stunning exterior architecture and landscaping projects
+            Explore our stunning exterior architecture and landscaping projects. The best architectural design services in Ahmedabad.
           </p>
         </motion.div>
 

@@ -5,7 +5,7 @@ export function Services() {
   const services = [
     {
       icon: Home,
-      title: 'Interior Design',
+      title: 'Residential Interior Design',
       description: 'Complete interior design solutions for residential and commercial spaces',
     },
     {
@@ -15,23 +15,23 @@ export function Services() {
     },
     {
       icon: Palette,
-      title: '3D Visualization',
+      title: '3D Visualization & Portfolio',
       description: 'Realistic 3D renders to help you visualize your dream space',
     },
     {
       icon: PenTool,
-      title: 'Space Planning',
+      title: 'Creative Space Planning Services',
       description: 'Optimal space utilization with functional and aesthetic layouts',
     },
     {
       icon: Ruler,
-      title: 'Architectural Design',
+      title: 'Architectural Design Services',
       description: 'Complete architectural solutions from concept to construction',
     },
     {
       icon: Hammer,
-      title: 'Renovation',
-      description: 'Transform existing spaces with our expert renovation services',
+      title: 'Renovation | Turnkey Interior Solutions',
+      description: 'Transform existing spaces with our expert renovation services including Modular Kitchens.',
     },
   ];
 

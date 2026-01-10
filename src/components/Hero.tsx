@@ -22,7 +22,7 @@ export function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#2A2420]/90 via-[#3D3531]/85 to-[#2A2420]/90" />
-        
+
         {/* Subtle Pattern Overlay */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -51,7 +51,7 @@ export function Hero() {
               <span className="text-[#C9B8A8]">Creating Dreams</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Professional interior and exterior design solutions that bring your vision to life
+              Professional turnkey interior solutions and luxury home designs that bring your vision to life.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button

@@ -26,7 +26,7 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">About Vishwakarma Design</h2>
+          <h2 className="text-4xl md:text-5xl text-gray-900 mb-4">About Vishwakarma Design - Expert Interior Designers in Ahmedabad</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We are a team of passionate designers dedicated to creating beautiful, functional spaces
             that reflect your unique style and needs.
@@ -57,12 +57,12 @@ export function About() {
             <div>
               <h3 className="text-3xl text-gray-900 mb-6">Why Choose Us?</h3>
               <p className="text-gray-600 mb-6">
-                At Vishwakarma Design, we believe that great design is more than just aesthetics. 
-                It's about creating spaces that enhance your lifestyle and bring your vision to life. 
+                At Vishwakarma Design, we aim to be the best commercial interior designers in Gujarat.
+                It's about creating spaces that enhance your lifestyle and bring your vision to life.
                 Our team combines creativity with technical expertise to deliver exceptional results.
               </p>
               <p className="text-gray-600">
-                From conceptual design to final execution, we handle every aspect of your project 
+                From conceptual design to final execution, we handle every aspect of your project
                 with professionalism and attention to detail.
               </p>
             </div>

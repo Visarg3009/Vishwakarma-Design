@@ -1,3 +1,60 @@
+/* Add these styles at the TOP of your index.css file, before the Tailwind imports */
+
+/* Global Reset and Full Width Layout */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* html {
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+} */
+
+/* body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+} */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections are full width on mobile */
+@media (max-width: 768px) {
+  /* .container {
+    max-width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  } */
+  
+  /* Fix for any sections that might have max-width */
+  /* section {
+    width: 100%;
+    max-width: 100%;
+  } */
+}
+
+/* Prevent horizontal scrolling */
+/* body, html, #root, main, section, div {
+  overflow-x: clip;
+} */
+
+/* Make sure images don't cause overflow */
+/* img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {

@@ -50,7 +50,7 @@ router.post('/', async (req: Request<{}, {}, ContactForm>, res: Response) => {
 
     const mailOptions = {
       from: `"Vishwakarma Design" <${process.env.SMTP_USER}>`,
-      to: 'visarg3009@gmail.com',
+      to: process.env.SMTP_USER || 'vishwakarmadesigningsolutions@gmail.com',
       replyTo: email,
       subject: `New Inquiry from Website: ${subject}`,
       html,
